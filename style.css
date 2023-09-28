@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,
+*::before,
+*::after
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: thin;
+}
+
+body
+{
+    display: grid;
+    /* grid-template-columns: 250px 250px 4fr 1fr; */
+    grid-template-columns: 350px 4fr 1fr;
+
+    min-height: 100vh;
+    padding: 30px;
+    background-color: #18191c;
+    color: #FFFFFF;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 27px;
+
+}
+
+form *
+{
+    margin-bottom: 20px;
+}
+
+form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+label
+{
+    display: block;
+}
+
+.input,
+.button
+{
+    height: 50px;
+    width: 500px;
+}
+
+.input
+{
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 300;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.input:focus
+{
+    border-color: #FFD829;
+    outline: none;
+}
+
+.button
+{
+    display: block;
+    min-width: 210px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 9px 15px;
+    color: #000000;
+    font-size: 27px;
+    font-weight: 300;
+    font-family: inherit;
+}
+
+.button:hover
+{
+    background-color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.2s linear;
+}
+
+.button:focus-visible,
+.button:focus
+{
+    border: 2px solid #ffffff;
+    outline: none;
+}
+
+.button:disabled
+{
+    cursor: not-allowed;
+}
+
+.task
+{
+    width: 500px;
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.counters
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.counter
+{
+    font-size: 50px;
+}
+
+.right
+{
+    color: #59CE8F;
+    right: 0;
+}
+
+.wrong
+{
+    color: #FF1E00;
+    right: 200px;
+}
+
+.areas
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    overflow-y: scroll;
+    height: calc(100vh - 60px);
+    width: 350px;
+    border: 3px #fff solid;
+}
+
+::-webkit-scrollbar
+{
+    width: 5px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #FAE5F6;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active
+{
+    background: #fabae1;
+}
